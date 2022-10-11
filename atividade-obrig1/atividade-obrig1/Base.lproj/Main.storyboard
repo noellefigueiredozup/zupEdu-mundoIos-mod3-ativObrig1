@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="atividade_obrig1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLH-iY-x6V" userLabel="ViewLogin">
+                                <rect key="frame" x="32" y="263" width="350" height="380"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN COM SUA CONTA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxw-Da-y4C" userLabel="LabelTitulo">
+                                        <rect key="frame" x="32" y="32" width="286" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ONp-hT-fTa" userLabel="TextFieldEmail">
+                                        <rect key="frame" x="32" y="85" width="286" height="56"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="57Q-T1-krq"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aig-vG-G5x" userLabel="TextFieldSenha">
+                                        <rect key="frame" x="32" y="157" width="286" height="56"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="GFG-Th-BCa"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cs0-Yd-Zrh" userLabel="ButtonLogin">
+                                        <rect key="frame" x="32" y="245" width="286" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="4FP-ep-4Dj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="LOGIN">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                            <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                            <color key="baseBackgroundColor" name="Blue Marguerite"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickButtonLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Muf-Rq-Rhk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUL-Sh-JaB" userLabel="ButtonSenha">
+                                        <rect key="frame" x="32" y="317" width="286" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Esqueceu a senha?">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="baseForegroundColor" systemColor="secondaryLabelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickButtonSenha:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qHd-RW-mGj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ONp-hT-fTa" firstAttribute="top" secondItem="Hxw-Da-y4C" secondAttribute="bottom" constant="32" id="0Ci-NH-CFB"/>
+                                    <constraint firstAttribute="trailing" secondItem="ONp-hT-fTa" secondAttribute="trailing" constant="32" id="0lp-jg-2WK"/>
+                                    <constraint firstAttribute="bottom" secondItem="LUL-Sh-JaB" secondAttribute="bottom" constant="32" id="3Jr-MD-4Ac"/>
+                                    <constraint firstItem="Cs0-Yd-Zrh" firstAttribute="top" secondItem="Aig-vG-G5x" secondAttribute="bottom" constant="32" id="50G-gQ-w3u"/>
+                                    <constraint firstItem="Hxw-Da-y4C" firstAttribute="leading" secondItem="YLH-iY-x6V" secondAttribute="leading" constant="32" id="9ht-s4-fHh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hxw-Da-y4C" secondAttribute="trailing" constant="32" id="AQb-dC-yB4"/>
+                                    <constraint firstItem="LUL-Sh-JaB" firstAttribute="top" secondItem="Cs0-Yd-Zrh" secondAttribute="bottom" constant="16" id="Ckc-s4-9kw"/>
+                                    <constraint firstItem="Aig-vG-G5x" firstAttribute="width" secondItem="ONp-hT-fTa" secondAttribute="width" id="FMl-gv-ZEA"/>
+                                    <constraint firstItem="ONp-hT-fTa" firstAttribute="leading" secondItem="YLH-iY-x6V" secondAttribute="leading" constant="32" id="Ofr-jg-j8M"/>
+                                    <constraint firstItem="Hxw-Da-y4C" firstAttribute="top" secondItem="YLH-iY-x6V" secondAttribute="top" constant="32" id="T7f-n3-hcK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cs0-Yd-Zrh" secondAttribute="trailing" constant="32" id="W46-ek-FW1"/>
+                                    <constraint firstItem="Aig-vG-G5x" firstAttribute="centerX" secondItem="ONp-hT-fTa" secondAttribute="centerX" id="WZI-kg-aKx"/>
+                                    <constraint firstItem="LUL-Sh-JaB" firstAttribute="centerX" secondItem="Cs0-Yd-Zrh" secondAttribute="centerX" id="XDO-r2-h0H"/>
+                                    <constraint firstAttribute="trailing" secondItem="LUL-Sh-JaB" secondAttribute="trailing" constant="32" id="YRa-0f-GzB"/>
+                                    <constraint firstItem="Aig-vG-G5x" firstAttribute="top" secondItem="ONp-hT-fTa" secondAttribute="bottom" constant="16" id="iT5-kD-JPw"/>
+                                    <constraint firstItem="Cs0-Yd-Zrh" firstAttribute="centerX" secondItem="Aig-vG-G5x" secondAttribute="centerX" id="mkP-0u-HCm"/>
+                                    <constraint firstItem="ONp-hT-fTa" firstAttribute="centerX" secondItem="Hxw-Da-y4C" secondAttribute="centerX" id="nsc-qR-89b"/>
+                                    <constraint firstItem="LUL-Sh-JaB" firstAttribute="leading" secondItem="YLH-iY-x6V" secondAttribute="leading" constant="32" id="nsd-hb-MFS"/>
+                                    <constraint firstItem="Cs0-Yd-Zrh" firstAttribute="leading" secondItem="YLH-iY-x6V" secondAttribute="leading" constant="32" id="qhf-Mc-Zj7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Blue Marguerite"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YLH-iY-x6V" secondAttribute="trailing" constant="32" id="bso-GT-dyO"/>
+                            <constraint firstItem="YLH-iY-x6V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="hEF-8U-3Tw"/>
+                            <constraint firstItem="YLH-iY-x6V" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="sLk-0S-kRe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fieldEmail" destination="ONp-hT-fTa" id="CX1-Rm-t5w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="49.553571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Blue Marguerite">
+            <color red="0.40392156862745099" green="0.396078431372549" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
